@@ -1,0 +1,98 @@
+.grid {
+  display: grid;
+  grid-gap: 1.4rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.callout {
+  width: 18rem;
+  height: 14rem;
+}
+
+.top-bar {
+  margin-bottom: 1.6rem;
+}
+
+#alabama {
+  background: url('./media/alabama-crimson-tide-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+
+#arkansas {
+  background: url('./media/arkansas-razorbacks-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+
+#auburn {
+  background: url('./media/auburn-tigers-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+
+#florida {
+  background: url('./media/florida-gators-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+
+#georgia {
+  background: url('./media/georgia-bulldogs-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+
+#kentucky {
+  background: url('./media/kentucky-wildcats-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+
+#lsu {
+  background: url('./media/lsu-tigers-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+
+#mississippi {
+  background: url('./media/mississippi-rebels-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+
+#mississippiState {
+  background: url('./media/mississippi-state-bulldogs-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+
+#missouri {
+  background: url('./media/missouri-tigers-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+
+#southCarolina {
+  background: url('./media/south-carolina-gamecocks-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+
+#tennessee {
+  background: url('./media/tennessee-volunteers-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+
+#atm {
+  background: url('./media/texas-am-aggies-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+
+#vanderbilt {
+  background: url('./media/vanderbilt-commodores-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
