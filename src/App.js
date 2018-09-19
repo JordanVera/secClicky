@@ -14,14 +14,10 @@ class App extends Component {
    })
   }
 
-  checkIfClicked = () => {
-    if (this.state.beenClicked === 0) {
-      this.setState({
-        beenClicked: this.state.beenClicked + 1
-      })
-    } else {
-      console.log('you lose');
-    }
+  resetGame = () => {
+    this.setState({
+      counter: 0
+    })
   }
 
   // onClick = () => {
@@ -34,20 +30,20 @@ class App extends Component {
       <div className="App grid-container">
        <Header counter={this.state.counter} clicked={this.state.beenClicked} />
        <div className="grid">
-        <Card team={"alabama"} onClickFunc={this.incrementCounter} />
-        <Card team={"arkansas"} onClickFunc={this.incrementCounter} />
-        <Card team={"auburn"} onClickFunc={this.incrementCounter} />
-        <Card team={"florida"} onClickFunc={this.incrementCounter} />
-        <Card team={"georgia"} onClickFunc={this.incrementCounter} />
-        <Card team={"kentucky"} onClickFunc={this.incrementCounter} />
-        <Card team={"lsu"} onClickFunc={this.incrementCounter} />
-        <Card team={"mississippi"} onClickFunc={this.incrementCounter} />
-        <Card team={"mississippiState"} onClickFunc={this.incrementCounter} />
-        <Card team={"missouri"} onClickFunc={this.incrementCounter} />
-        <Card team={"southCarolina"} onClickFunc={this.incrementCounter} />
-        <Card team={"tennessee"} onClickFunc={this.incrementCounter} />
-        <Card team={"atm"} onClickFunc={this.incrementCounter} />
-        <Card team={"vanderbilt"} onClickFunc={this.incrementCounter} />
+        <Card reset={this.resetGame} team={"alabama"} onClickFunc={this.incrementCounter} />
+        <Card reset={this.resetGame} team={"arkansas"} onClickFunc={this.incrementCounter} />
+        <Card reset={this.resetGame} team={"auburn"} onClickFunc={this.incrementCounter} />
+        <Card reset={this.resetGame} team={"florida"} onClickFunc={this.incrementCounter} />
+        <Card reset={this.resetGame} team={"georgia"} onClickFunc={this.incrementCounter} />
+        <Card reset={this.resetGame} team={"kentucky"} onClickFunc={this.incrementCounter} />
+        <Card reset={this.resetGame} team={"lsu"} onClickFunc={this.incrementCounter} />
+        <Card reset={this.resetGame} team={"mississippi"} onClickFunc={this.incrementCounter} />
+        <Card reset={this.resetGame} team={"mississippiState"} onClickFunc={this.incrementCounter} />
+        <Card reset={this.resetGame} team={"missouri"} onClickFunc={this.incrementCounter} />
+        <Card reset={this.resetGame} team={"southCarolina"} onClickFunc={this.incrementCounter} />
+        <Card reset={this.resetGame} team={"tennessee"} onClickFunc={this.incrementCounter} />
+        <Card reset={this.resetGame} team={"atm"} onClickFunc={this.incrementCounter} />
+        <Card reset={this.resetGame} team={"vanderbilt"} onClickFunc={this.incrementCounter} />
        </div>
       </div>
     );
